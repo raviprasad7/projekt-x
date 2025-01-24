@@ -39,3 +39,14 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# vscode
+.vscode
+
+# prettier
+.prettierrc
+.prettierignore
+
+# eslint
+.eslintrc
+.eslintignore
