@@ -3,9 +3,9 @@
 import React from 'react';
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 import { ReactQueryDevtools } from '@tanstack/react-query-devtools';
-import { Toaster } from 'projekt-x/components/ui/toaster';
-import { ThemeProvider } from 'projekt-x/components/ThemeProvider';
-import { Header } from 'projekt-x/components/Header';
+import { Toaster } from '@@components/ui/toaster';
+import { ThemeProvider } from '@@components/ThemeProvider';
+import { Header } from '@@components/Header';
 
 const queryClient = new QueryClient();
 

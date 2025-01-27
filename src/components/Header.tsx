@@ -1,9 +1,10 @@
 'use client';
 
 import React from 'react';
-import { cn } from 'projekt-x/lib/utils';
-import { ThemeToggle } from 'projekt-x/components/ThemeToggle';
+import { cn } from '@@lib/utils';
+import { ThemeToggle } from '@@components/ThemeToggle';
 import Link from 'next/link';
+import { UserMenu } from './UserMenu';
 
 interface HeaderProps {
   className?: string;
@@ -24,8 +25,13 @@ export const Header = ({ className }: HeaderProps) => {
         >
           Projekt X
         </Link>
-        <div className="border-l pl-4 dark:border-gray-800">
-          <ThemeToggle />
+        <div className="flex items-center">
+          <div className="pr-4 border-r dark:border-gray-800">
+            <UserMenu />
+          </div>
+          <div className="pl-4 dark:border-gray-800">
+            <ThemeToggle />
+          </div>
         </div>
       </div>
     </header>
